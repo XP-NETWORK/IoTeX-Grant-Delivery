@@ -27,15 +27,15 @@
 | Frontend | React (JSX, TypeScript) |
 
 ### 1.3. Bridge Architecture
-![Bridge Architecture](assets/BridgeArchitecture.jpg)
+![Bridge Architecture](https://github.com/XP-NETWORK/IoTeX-Grant-Delivery/blob/master/assets/BridgeArchitecture.jpg)
 
 ### 2 Frontend
 
 1. Initial View of the Bridge
-![Initial View](assets/1.png)
+![Initial View](https://github.com/XP-NETWORK/IoTeX-Grant-Delivery/blob/master/assets/1.png)
    
 2. Departure / Destination chain list
-![IoTeX](assets/IoTeX-chainlist.png)
+![IoTeX](https://github.com/XP-NETWORK/IoTeX-Grant-Delivery/blob/master/assets/IoTeX-chainlist.png)
 
 
 ### 3 Backend + Token Conversion Oracles
@@ -89,21 +89,21 @@ Our long term plans include:
 Sending from IoTeX to Ethereum:<br/>
 https://iotexscan.io/tx/0xc86ebc1508516e05dc9306b69ccd28ba2994c9439e8ee961b6aaf47f8bb22483?format=0x
 
-<img align="center" src="assets/iotex1.jpg">
+<img align="center" src="https://github.com/XP-NETWORK/IoTeX-Grant-Delivery/blob/master/assets/iotex1.jpg">
 
 Native NFT ID: 4847
-![IoTeX](assets/iotex_scan.png)
+![IoTeX](https://github.com/XP-NETWORK/IoTeX-Grant-Delivery/blob/master/assets/iotex_scan.png)
 
 IoTeX NFT on Ethereum in OpenSea:<br/>
-https://opensea.io/assets/0xc254a8d4ef5f825fd31561bdc69551ed2b8db134/30366210949921613079214926160
+https://opensea.io/https://github.com/XP-NETWORK/IoTeX-Grant-Delivery/blob/master/assets/0xc254a8d4ef5f825fd31561bdc69551ed2b8db134/30366210949921613079214926160
 
-<img align="center" src="assets/iotex2.jpg">
+<img align="center" src="https://github.com/XP-NETWORK/IoTeX-Grant-Delivery/blob/master/assets/iotex2.jpg">
 
 The Origin of the NFT: IoTeX<br/>
 Chain nonce: 20 (nonce of IoTeX in the NFT Bridge)
-![On Open Sea](assets/on_open_sea.png)
+![On Open Sea](https://github.com/XP-NETWORK/IoTeX-Grant-Delivery/blob/master/assets/on_open_sea.png)
 The URI of the original on OpenSea links to the original NFT ID: 4847:
-![4847](assets/open_sea_4847.png)
+![4847](https://github.com/XP-NETWORK/IoTeX-Grant-Delivery/blob/master/assets/open_sea_4847.png)
 
 ## 8. Trying IoTeX in Testnet
 
