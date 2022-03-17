@@ -51,33 +51,30 @@
    2. Event deserialization
    3. Transaction composition
    4. Transaction submition to the target chain
-3. Velas Node 
-   1. able to accept transactions
-   2. Deliver events to the validators
 
 ## 5. Milestone Deliverables
 
 | Number | Deliverable | Specification |
 |-|-|-|
 | 5.1 | Documentation | The basic tutorial that can interact with the deployed smart contracts and backend service can be found below. |
-| 5.2 | Smart Contracts | We have deployed smart contracts on IoTeX mainnet  that are able to:<br>1. Support ERC-721 `0x81e1Fdad0658b69914801aBaDA7Aa0Abb31653E5`<br>2. Support ERC-1155 `0xD87755CCeaab0edb28b3f0CD7D6405E1bB827B65`<br>3. Bridge SC `0x4bA4ADdc803B04b71412439712cB1911103380D6`<br> 4. Freeze/Unfreeze Native NFTs in batches<br>5. Mint/Burn wrapped NFTs in batches<br>6. Pay the TX fees on the target chain in native tokens<br>7. Send / Receive NFTs in batches<br>8. Withdraw TX fees in the native tokens for the target chain |
-| 5.3 | Backend | Integration of Velas in the:<br>1. [NFT Index](https://indexnft.herokuapp.com) Requires JWT<br>2. TX Fee Estimator<br>3. [Crypto-currency converter](https://testing-bridge.xp.network/exchange/)<br> 4. [Heartbeat](https://xpheartbeat.herokuapp.com) - checks whether the Velas Node & validators areup and operating properly |
-| 5.4 | Frontend | Integration of Velas in the:<br>1. User Interface<br> 2. Wallets (Metamask, TrustWallet, WalletConnect) |
+| 5.2 | Smart Contracts | We have deployed smart contracts on IoTeX mainnet  that are able to:<br>1. Support ERC-721 [0x81e1Fdad0658b69914801aBaDA7Aa0Abb31653E5](https://iotexscan.io/address/0x81e1Fdad0658b69914801aBaDA7Aa0Abb31653E5?format=0x)<br>2. Support ERC-1155 [0xD87755CCeaab0edb28b3f0CD7D6405E1bB827B65](https://iotexscan.io/address/0xD87755CCeaab0edb28b3f0CD7D6405E1bB827B65)<br>3. Bridge SC [0x4bA4ADdc803B04b71412439712cB1911103380D6](https://iotexscan.io/address/0x4bA4ADdc803B04b71412439712cB1911103380D6)<br> 4. Freeze/Unfreeze Native NFTs in batches<br>5. Mint/Burn wrapped NFTs in batches<br>6. Pay the TX fees on the target chain in native tokens<br>7. Send / Receive NFTs in batches<br>8. Withdraw TX fees in the native tokens for the target chain |
+| 5.3 | Backend | Integration of IoTeX in the:<br>1. [NFT Index](https://indexnft.herokuapp.com) Requires JWT<br>2. TX Fee Estimator<br>3. [Crypto-currency converter](https://testing-bridge.xp.network/exchange/)<br> 4. [Heartbeat](https://xpheartbeat.herokuapp.com) - checks whether the IoTeX Node & validators areup and operating properly |
+| 5.4 | Frontend | Integration of IoTeX in the:<br>1. User Interface<br> 2. Wallets (Metamask, TrustWallet, WalletConnect) |
 
 
 ## 5.6 Testnet Smart contracts
 |Contract|Address|
 |:-:|:-:|
-|UserNftMinter|0x90d38996B210D45bDF2FD54d091C6061dff0dA9F|
-|Erc1155Minter|0xE90105827d04522e52AdfA6BF695730E5706C0C2|
-|XPNft1155|0x46Df0d0Dd629d61BDFA567dE61912FDeD883A60d|
-|XPNft|0x33DC209D33AddF60cf90Dd4B10f9a198A1A93f63|
-|Minter|0x04a5f9158829Cae5a0a549954AdEaBD47BbB3d2d|
+|UserNftMinter|[0xC3dB3dBcf007961541BE1ddF15cD4ECc0Fc758d5](https://testnet.iotexscan.io/address/0xC3dB3dBcf007961541BE1ddF15cD4ECc0Fc758d5)|
+|Erc1155Minter|[0x5df32A2F15D021DeF5086cF94fbCaC4594208A26](https://testnet.iotexscan.io/address/0x5df32A2F15D021DeF5086cF94fbCaC4594208A26)|
+|XPNft1155|[0x941972fa041F507eBb8CfD5d11C05Eb1a51f2E95](https://testnet.iotexscan.io/address/0x941972fa041F507eBb8CfD5d11C05Eb1a51f2E95)|
+|XPNft|[0x5D822bA2a0994434392A0f947C83310328CFB0DE](https://testnet.iotexscan.io/address/0x5D822bA2a0994434392A0f947C83310328CFB0DE)|
+|Minter|[0xE657b66d683bF4295325c5E66F6bb0fb6D1F7551](https://testnet.iotexscan.io/address/0xE657b66d683bF4295325c5E66F6bb0fb6D1F7551)|
 
 ## 6. Future Plans
 
 Our long term plans include:
-1. Running a Velas Node for listening to the chain events and submitting bridge transactions
+1. Running a IoTeX Node for listening to the chain events and submitting bridge transactions
 2. Mainnet integration to Cardano, Solana, Polkadot ecosystem, Cosmos ecosystem, EOS compatible chains, NEO
 3. ERC-721A New smart contract support (allows minting and burning in batches)
 4. Forged NFT detection on all the bridged chains
@@ -182,7 +179,7 @@ console.log("signer", signer);
   const avax      = await factory.inner<6>(Chain.AVALANCHE);
   const polygon   = await factory.inner<7>(Chain.POLYGON);
   const fantom    = await factory.inner<8>(Chain.FANTOM);
-  const velas     = await factory.inner<19>(Chain.VELAS);
+  const IoTeX     = await factory.inner<19>(Chain.IoTeX);
   const gnosis    = await factory.inner<14>(Chain.XDAI);
   const harmony   = await factory.inner<12>(Chain.HARMONY);
   // Non-EVM chains:
@@ -217,7 +214,7 @@ console.log("signer", signer);
 (async () => {
   // Getting a list of NFTs
   const iotexNFTs = await factory.nftList(
-    velas,            // The inner chain object
+    IoTeX,            // The inner chain object
     signer.address  // The public key of the user
   );
   // To view a list of NFTs:
