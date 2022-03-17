@@ -1,6 +1,13 @@
-# IoTeX Grant Documentation
+# IoTeX Grant Delivery
 
-## 1.1 Bridge Architecture Overview
+## Project Name
+XP Network Multi-Chain NFT Bridge
+
+## Project Type
+NFT Infrastructure
+
+## Description
+### 1.1 Bridge Architecture Overview
 
 - The first of the kind [NFT multi-chain bridge](https://bridge.xp.network/) connecting a wide range of EVM to a number of Non-EVM chains. The bridge allows transferring NFTs to and from:
   - Ethereum
@@ -17,7 +24,7 @@
   - Aurora
   - Fuse
 
-### 1.2 Tech stack
+#### 1.2 Tech stack
 
 | Bridge Component | Stack |
 | :-: | :-: |
@@ -26,10 +33,11 @@
 | Backend | TypeScript |
 | Frontend | React (JSX, TypeScript) |
 
-### 1.3. Bridge Architecture
+#### 1.3. Bridge Architecture
+
 ![Bridge Architecture](https://github.com/XP-NETWORK/IoTeX-Grant-Delivery/blob/master/assets/BridgeArchitecture.jpg)
 
-### 2 Frontend
+#### 2 Frontend
 
 1. Initial View of the Bridge
 ![Initial View](https://github.com/XP-NETWORK/IoTeX-Grant-Delivery/blob/master/assets/1.png)
@@ -38,13 +46,13 @@
 ![IoTeX](https://github.com/XP-NETWORK/IoTeX-Grant-Delivery/blob/master/assets/IoTeX-chainlist.png)
 
 
-### 3 Backend + Token Conversion Oracles
+#### 3 Backend + Token Conversion Oracles
 
 1. Nft-Index (Returns a list of NFTs an account owns on a supported blockchain)
 2. Transaction Fee Estimator - provides the TX fee on the target chain
 3. Crypto-Currency Converter (Oracle) converts the target fee to the native tokens of the original chain via USDT equivalent.
 
-### 4 Relay Validators (Oracles)
+#### 4 Relay Validators (Oracles)
 1. Private (SK) & Public (PK) key pairs for all the connected chains
 2. Validation logic
    1. Chain Event catching
@@ -52,6 +60,7 @@
    3. Transaction composition
    4. Transaction submition to the target chain
 
+=== Please add [Milestone Reports](https://community.iotex.io/t/grant-issuance-rules/3839#milestoneReport) below ===
 ## 5. Milestone Deliverables
 
 | Number | Deliverable | Specification |
@@ -84,7 +93,7 @@ Our long term plans include:
 8. NFT Search (search by any parameter)
 9. Retention protection tool
 
-## 7. Successful Mainnet NFT Transfers
+## 7. Proof Links & Screens
 
 Sending from IoTeX to Ethereum:<br/>
 https://iotexscan.io/tx/0xc86ebc1508516e05dc9306b69ccd28ba2994c9439e8ee961b6aaf47f8bb22483?format=0x
@@ -236,3 +245,10 @@ console.log("signer", signer);
   console.log(web3Result);
 })();
 ```
+
+## Community voting
+[poll type=regular results=always chartType=bar]
+# Community members can vote on grant proposals to facilitate grants assignments to their favorite projects. Please vote on this proposal:
+* I Like this proposal
+* I Don't like this proposal
+[/poll]
