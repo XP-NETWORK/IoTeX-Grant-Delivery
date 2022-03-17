@@ -94,10 +94,19 @@ https://iotexscan.io/tx/0xc86ebc1508516e05dc9306b69ccd28ba2994c9439e8ee961b6aaf4
 
 <img align="center" src="assets/iotex1.jpg">
 
+Native NFT ID: 4847
+![IoTeX](assets/iotex_scan.png)
+
 IoTeX NFT on Ethereum in OpenSea:<br/>
 https://opensea.io/assets/0xc254a8d4ef5f825fd31561bdc69551ed2b8db134/30366210949921613079214926160
 
 <img align="center" src="assets/iotex2.jpg">
+
+The Origin of the NFT: IoTeX<br/>
+Chain nonce: 20 (nonce of IoTeX in the NFT Bridge)
+![On Open Sea](assets/on_open_sea.png)
+The URI of the original on OpenSea links to the original NFT ID: 4847:
+![4847](assets/open_sea_4847.png)
 
 ## 8. Trying IoTeX in Testnet
 
